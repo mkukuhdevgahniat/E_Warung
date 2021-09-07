@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pembayaran">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="409dp"
+        android:layout_height="77dp"
+        app:cardBackgroundColor="#e85d04"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Pembayaran Pesanan"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="37dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="27dp"
+            android:background="#FF6D00"
+            android:backgroundTint="#e85d04"
+            android:onClick="setMenu"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView3"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/paket_astaga_2" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="232dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto"
+                android:text="PAKET HEMAT"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Nasi + Ayam + Es teh"
+                android:textColor="#D2000000"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Rp. 20.000,00"
+                android:textColor="#D2000000"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView11"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="11dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView5"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/cfc_geboks_combo" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="232dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto"
+                android:text="PAKET LENGKAP"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Ayam + Sambal"
+                android:textColor="#D2000000"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Rp. 50.000,00"
+                android:textColor="#D2000000"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Jumlah Pesanan"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Jumlah Pesanan"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView11" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:cardBackgroundColor="#E85D04"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        tools:ignore="TouchTargetSizeCheck">
+
+        <TextView
+            android:id="@+id/btnPlusP1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="setPlus1"
+            android:text="+"
+            android:textColor="@color/white"
+            tools:ignore="TouchTargetSizeCheck" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView10"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="#E85D04"
+        app:layout_constraintEnd_toStartOf="@+id/txtJumP1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        tools:ignore="TouchTargetSizeCheck">
+
+        <TextView
+            android:id="@+id/btnMinusP1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="setMin1"
+            android:text="-"
+            android:textColor="@color/white"
+            tools:ignore="TouchTargetSizeCheck" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView15"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:cardBackgroundColor="#E85D04"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5"
+        tools:ignore="TouchTargetSizeCheck">
+
+        <TextView
+            android:id="@+id/btnPlusP2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="setPlus2"
+            android:text="+"
+            android:textColor="@color/white"
+            tools:ignore="TouchTargetSizeCheck" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="#E85D04"
+        app:layout_constraintEnd_toStartOf="@+id/txtJumP2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5"
+        tools:ignore="TouchTargetSizeCheck">
+
+        <TextView
+            android:id="@+id/btnMinusP2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="setMin2"
+            android:text="-"
+            android:textColor="@color/white"
+            tools:ignore="TouchTargetSizeCheck" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="356dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#E85D04"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="Detail Pesan"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="150dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Jumlah Pesan"
+                    android:textColor="@color/white"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Total Pembayaran"
+                    android:textColor="@color/white"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="17dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtJumTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/txtJumBayar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="right"
+                    android:text="Rp. 0-"
+                    android:textColor="@color/white"
+                    android:textStyle="italic" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#6a1414"
+                android:fontFamily="@font/roboto"
+                android:text="BAYAR"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtJumP1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:gravity="center"
+        android:text="0"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+    <TextView
+        android:id="@+id/txtJumP2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="1dp"
+        android:gravity="center"
+        android:text="0"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/cardView15"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
